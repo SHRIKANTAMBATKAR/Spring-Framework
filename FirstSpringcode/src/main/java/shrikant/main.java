@@ -8,6 +8,7 @@ public class main {
 
    ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
+
         demo d = (demo) context.getBean("helloBean");
         d.sayHello();
     }

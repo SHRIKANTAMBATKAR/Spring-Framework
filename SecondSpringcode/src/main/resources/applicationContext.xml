@@ -14,7 +14,7 @@
     <constructor-arg index="2" value="30"/>
 </bean>
 
- <bean id="list" class="shrikant.demo">  
+<bean id="list" class="shrikant.demo">  
 <constructor-arg>  
 <list>  
 <value>Java is a programming language</value>  
@@ -24,3 +24,4 @@
 </constructor-arg>  
 </bean>  
 </beans>
+

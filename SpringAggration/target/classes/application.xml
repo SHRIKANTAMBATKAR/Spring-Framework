@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="a1" class="shrikant.Addresss">
+        <constructor-arg index="0" value="101" type="int"/>
+        <constructor-arg index="1" value="Hyderabad"/>
+        <constructor-arg index="2" value="Maharashtra"/>
+    </bean>
+
+    <bean id="e1" class="shrikant.Employee">
+        <constructor-arg index="0" value="201" type="int"/>
+        <constructor-arg index="1" value="Shrikant"/>
+        <constructor-arg index="2" value="220000" type="int"/>
+        <constructor-arg index="3" value="22" type="int"/>
+        <constructor-arg index="4" ref="a1"/>
+    </bean>
+
+</beans>

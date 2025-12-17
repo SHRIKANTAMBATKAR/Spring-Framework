@@ -22,7 +22,5 @@ public class Addresss implements  Serializable{
   public String toString() {
 	return "Addresss [doreno=" + doreno + ", city=" + city + ", state=" + state + "]";
   }
-
-
-  
 }
+

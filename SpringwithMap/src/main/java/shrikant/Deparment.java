@@ -11,7 +11,6 @@ public class Deparment {
     public Deparment() {
         super();
     }
-
     public Deparment(int depid, String depname, List<Employee> list) {
         this.depid = depid;
         this.depname = depname;
@@ -28,3 +27,4 @@ public class Deparment {
                ", depname=" + depname + "]";
     }
 }
+

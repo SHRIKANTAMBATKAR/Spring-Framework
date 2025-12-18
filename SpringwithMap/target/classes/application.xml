@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="e1" class="shrikant.Employee">
+        <constructor-arg index="0" value="201" type="int"/>
+        <constructor-arg index="1" value="Shrikant"/>
+        <constructor-arg index="2" value="220000" type="int"/>
+        <constructor-arg index="3" value="22" type="int"/>
+    </bean>
+    
+    <bean id="e2" class="shrikant.Employee">
+        <constructor-arg index="0" value="202" type="int"/>
+        <constructor-arg index="1" value="Shri"/>
+        <constructor-arg index="2" value="220000" type="int"/>
+        <constructor-arg index="3" value="22" type="int"/>
+    </bean>
+    
+    <bean id="e3" class="shrikant.Employee">
+        <constructor-arg index="0" value="203" type="int"/>
+        <constructor-arg index="1" value="Sai"/>
+        <constructor-arg index="2" value="220000" type="int"/>
+        <constructor-arg index="3" value="22" type="int"/>
+    </bean>
+    
+    <bean id="e4" class="shrikant.Employee">
+        <constructor-arg index="0" value="204" type="int"/>
+        <constructor-arg index="1" value="mahi"/>
+        <constructor-arg index="2" value="220000" type="int"/>
+        <constructor-arg index="3" value="22" type="int"/>
+    </bean> 
+
+  <bean id="d1" class="shrikant.Deparment">
+    <constructor-arg value="1"/>
+    <constructor-arg value="HR"/>
+    <constructor-arg>
+        <list>
+            <ref bean="e1"/>
+            <ref bean="e2"/>
+            <ref bean="e3"/>
+            <ref bean="e4"/>
+        </list>
+    </constructor-arg>
+  </bean>
+  
+  <bean id="c1" class="shrikant.Collage">
+    <constructor-arg value="101"/>
+    <constructor-arg value="BIT ballarpur"/>
+    <constructor-arg>
+     <map>
+       <entry key="d1"  value="e1"></entry> 
+       
+     </map>
+    </constructor-arg>
+  </bean>
+
+</beans>

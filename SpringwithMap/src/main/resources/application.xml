@@ -52,7 +52,7 @@
     <constructor-arg value="BIT ballarpur"/>
     <constructor-arg>
      <map>
-       <entry key="d1"  value="e1"></entry> 
+       <entry key="d1"  value-ref="e1"></entry> 
        
      </map>
     </constructor-arg>

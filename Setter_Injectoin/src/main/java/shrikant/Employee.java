@@ -18,12 +18,11 @@ public class Employee implements  Serializable{
 	this.salary = salary;
 	this.age = age;
 }
-
-
   @Override
   public String toString() {
 	return "Employee [empid=" + empid + ", name=" + name + ", salary=" + salary + ", age=" + age + "]";
   }
   
 }
+
 

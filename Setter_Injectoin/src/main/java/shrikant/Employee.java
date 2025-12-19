@@ -11,7 +11,6 @@ public class Employee implements  Serializable{
 	super();
   }
  
-  
   public Employee(int empid, String name, int salary, int age) {
 	super();
 	this.empid = empid;
@@ -27,3 +26,4 @@ public class Employee implements  Serializable{
   }
   
 }
+

@@ -1,5 +1,4 @@
-package customer.model;
-
+package customer.model;
 public class Customer {
 
 }
